@@ -1,0 +1,49 @@
+
+ul, li{
+    list-style: none;
+}
+@font-face {
+    font-family: 'Gogh';
+    src: url('../public/fonts/Gogh-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mont';
+    src: url('../public/fonts/Mont-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mont Bold';
+    src: url("../public/fonts/Mont-Bold.woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    border: none;
+    font: inherit;
+    color: inherit;
+}
+
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+ .wrapper {
+     max-width: 100%;
+     overflow-x: hidden;
+     height: 100vh;
+     margin: 0 auto;
+     padding: 0 ;
+ }
+*::before{
+    box-sizing: inherit;
+}
