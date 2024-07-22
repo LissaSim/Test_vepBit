@@ -1,10 +1,11 @@
 import React from 'react';
 import "../../style/BlogList.css"
 import Image from "next/image";
-import img1 from "../../public/img/IMG_8438 1.png"
+import img1 from "../../public/img/Screenshot 2023-07-13 at 1.21 1.png"
 import img2 from "../../public/img/IMG_9152 1.png"
 import img3 from "../../public/img/IMG_9508 1.png"
 import arrowRight from "../../public/img/arrowRight.png";
+import Link from "next/link";
 
 const BlogList = () => {
     return (
@@ -20,18 +21,17 @@ const BlogList = () => {
                                 <p className="card-text blog__table__text">If you’re a homeowner looking to spruce up
                                     your curb appeal or a
                                     marketer trying to make sure their clients get the best bang for..</p>
-                                <p className="card-text"><small className="blog__table__small">Learn more</small></p>
+                                <p className="card-text"><Link href={'/'}><small className="blog__table__small">Learn more</small></Link></p>
                             </div>
                         </div>
                         <div className="card mb-3 border-light blog__table__item">
                             <Image src={img2} alt="" className="card-img-top blog__table__img"/>
                             <div className="card-body">
-                                <h5 className="card-title blog__table__title">How Much Does House Power Washing Cost
-                                    ? </h5>
+                                <h5 className="card-title blog__table__title">How Much Does House Power Washing<br/> Cost ?</h5>
                                 <p className="card-text blog__table__text">Are you looking to freshen up the exterior of
                                     your home? Pressure washing a house is an essential part of maintaining its
                                     condition...</p>
-                                <p className="card-text"><small className="blog__table__small">Learn more</small></p>
+                                <p className="card-text"><Link href={'/'}><small className="blog__table__small">Learn more</small></Link></p>
                             </div>
                         </div>
                         <div className="card mb-3 border-light blog__table__item">
@@ -42,7 +42,7 @@ const BlogList = () => {
                                 <p className="card-text blog__table__text">If you’re looking to spruce up the exterior
                                     of your home or business in preparation for the upcoming season, power washing may
                                     be a...</p>
-                                <p className="card-text"><small className="blog__table__small">Learn more</small></p>
+                                <p className="card-text"><Link href={'/'}><small className="blog__table__small">Learn more</small></Link></p>
                             </div>
                         </div>
                     </div>

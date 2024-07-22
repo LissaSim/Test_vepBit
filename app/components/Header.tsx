@@ -8,7 +8,7 @@ import "../../style/Header.css"
 const Header = () => {
     return(
         <header>
-            <Image src={logo} alt='' />
+            <Image src={logo} alt='' className='header__logo'/>
             <div className=''>
                 <ul className='nav__list'>
                     <li className='nav__list__item--active'><Link href="/">Home</Link></li>
@@ -27,7 +27,7 @@ const Header = () => {
                     <li className='nav__list__item'><Link href="/">Contacts</Link></li>
                 </ul>
             </div>
-            <button className='header__button'>Get An Instant Quote <Image src={arrowRight} alt='btn learm more'/></button>
+            <button className='header__button'>Get An Instant Quote<Image src={arrowRight} alt='btn learm more'/></button>
         </header>
     )
 }

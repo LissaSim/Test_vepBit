@@ -11,6 +11,7 @@ import youtube from "../../public/img/mdi_youtube.png";
 import facebook from "../../public/img/fa_facebook.png";
 import instagram from "../../public/img/streamline_instagram-solid.png"
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
     return(
@@ -18,18 +19,24 @@ const Footer = () => {
             <div className="footer__wrapper">
                 <ul className='footer__list'>
                     <li className="footer__list__item"><p>Quick links</p></li>
-                    <li className="footer__list__item">Home</li>
-                    <li className="footer__list__item">About</li>
-                    <li className="footer__list__item">Services</li>
-                    <li className="footer__list__item">Gallery</li>
-                    <li className="footer__list__item">Reviews</li>
-                    <li className="footer__list__item">Blog</li>
-                    <li className="footer__list__item">Contacts</li>
+                    <li className="footer__list__item"><Link href={'/'}>Home</Link></li>
+                    <li className="footer__list__item"><Link href={'/'}>About</Link></li>
+                    <li className="footer__list__item"><Link href={'/'}>Services</Link></li>
+                    <li className="footer__list__item"><Link href={'/'}>Gallery</Link></li>
+                    <li className="footer__list__item"><Link href={'/'}>Reviews</Link></li>
+                    <li className="footer__list__item"><Link href={'/'}>Blog</Link></li>
+                    <li className="footer__list__item"><Link href={'/'}>Contacts</Link></li>
                 </ul>
                 <ul className='footer__list'>
                     <li className="footer__list__item"><p>Services</p></li>
-                    <li className="footer__list__item"><em>Residential<Image src={arrowDown} alt="arrow down"/></em></li>
-                    <li className="footer__list__item"><em>Commercial<Image src={arrowDown} alt="arrow down"/></em></li>
+                    <li className="footer__list__item">
+                        <Link href={'/'}><em>Residential<Image src={arrowDown} alt="arrow down"/></em></Link>
+                    </li>
+                    <li className="footer__list__item">
+                        <Link href={'/'}>
+                            <em>Commercial<Image src={arrowDown} alt="arrow down"/></em>
+                        </Link>
+                    </li>
                 </ul>
                 <ul className='footer__list'>
                     <li className="footer__list__item"><p>Contact</p></li>
@@ -39,16 +46,17 @@ const Footer = () => {
                     <li className="footer__list__item"><em><Image src={icon3} alt="Email"/>info@sudsyprowash.com</em></li>
                 </ul>
             </div>
-            <Image src={img} alt="Guarantee" className="footer__img"/>
-            <div className="footer__line"></div>
             <div className="footer__contacts">
-                <Image src={logo} alt=""/>
-                <ul className="footer__contacts__list">
-                    <li className="footer__contacts__list__item"><Image src={facebook} alt="Facebook"/></li>
-                    <li className="footer__contacts__list__item"><Image src={instagram} alt="Instagram"/></li>
-                    <li className="footer__contacts__list__item"><Image src={twitter} alt="Twitter"/></li>
-                    <li className="footer__contacts__list__item"><Image src={youtube} alt="YouTube"/></li>
-                </ul>
+                <Link href={"/"}><Image src={logo} alt=""/></Link>
+               <div className='footer__container'>
+                   <Image src={img} alt="Guarantee" className="footer__img"/>
+                   <ul className="footer__contacts__list">
+                       <li className="footer__contacts__list__item"><Link href={'/'}><Image src={facebook} alt="Facebook"/></Link></li>
+                       <li className="footer__contacts__list__item"><Link href={'/'}><Image src={instagram} alt="Instagram"/></Link></li>
+                       <li className="footer__contacts__list__item"><Link href={'/'}><Image src={twitter} alt="Twitter"/></Link></li>
+                       <li className="footer__contacts__list__item"><Link href={'/'}><Image src={youtube} alt="YouTube"/></Link></li>
+                   </ul>
+               </div>
             </div>
         </footer>
     )

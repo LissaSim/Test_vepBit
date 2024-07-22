@@ -3,15 +3,16 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 859px;
+    height: 100%;
     background-position: center;
     position: relative;
     padding-top: 272px;
     margin-top: 120px;
 }
 .main__content{
-    margin-left: 100px;
-    margin-right: 603px;
+    display: flex;
+    flex-direction: column;
+    margin: 32px 603px 137px 100px
 }
 
 .title1{
@@ -64,24 +65,27 @@ main{
     text-align: left;
     color: #2685C5;
 }
-.main__info__descr{
+
+.main__info__text{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
     margin-right: 102px;
 }
 
-.main__info__descr h3{
-    font-family: Gogh, sans-serif;
+.main__info__descr p{
+    font-family: Gogh;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    color: #222C5B;
     text-align: justified;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    color: #222C5B;
 }
 .main__info__button{
     background-color: #FFE12E;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 196px;
     height: 51px;
     padding: 15px 20px 15px 20px;
@@ -94,17 +98,16 @@ main{
 .main__list{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
 }
 .main__list__container{
     background-color: #DCE9F4;
     width: 100%;
-    height: 249px;
     justify-content: space-around;
     top: 1408px;
     padding: 60px 100px 60px 100px;
     margin-top: 100px;
-    gap: 20px;
+    margin-bottom: 100px;
 }
 
 .main__item{
@@ -118,4 +121,5 @@ main{
     font-weight: 400;
     line-height: 22.4px;
     text-align: center;
+    color: #222C5B;
 }

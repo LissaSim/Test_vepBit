@@ -25,13 +25,19 @@ const Main = () => {
             <div className='main__info'>
                 <div className="main__info__descr">
                     <h2 className='main__info__title'>Sudsy Prowash</h2>
-                    <h3>is a family-operated business dedicated to delivering the highest standard of exterior cleaning services to our valued clients.
-                        We employ eco-friendly chemicals and utilize the finest in soft and pressure washing technology, aiming to transform properties requiring exterior cleaning.</h3>
-                    <button className="main__info__button">Learn more <Image src={arrowRight} alt='arrow icon' /></button>
+                    <div className="main__info__text">
+                        <p>is a family-operated business dedicated to delivering the highest standard of exterior
+                            cleaning
+                            services to our valued clients.</p>
+                        <p>We employ eco-friendly chemicals and utilize the finest in soft and pressure washing
+                            technology,
+                            aiming to transform properties requiring exterior cleaning.</p>
+                    </div>
+                    <button className="main__info__button">Learn more <Image src={arrowRight} alt='arrow icon'/>
+                    </button>
                 </div>
-                <Image src={aboutUsImg} alt="About Us Image" />
+                <Image src={aboutUsImg} alt="About Us Image"/>
             </div>
-            <div className="main__list">
                 <div className="main__list__container">
                     <ul className="main__list">
                         <li className="main__item"><Image src={icon1} alt="Experienced and Professional Technicians"/>
@@ -53,7 +59,6 @@ const Main = () => {
                             <p>100% Satisfaction Guarantee</p>
                         </li>
                     </ul>
-                </div>
             </div>
         </>
     );

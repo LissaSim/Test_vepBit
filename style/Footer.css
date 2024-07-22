@@ -1,7 +1,5 @@
 footer{
     width: 100%;
-    height: 701px;
-    top: 5710px;
     padding: 60px 100px 60px 100px;
     gap: 10px;
     background: #222C5B;
@@ -10,7 +8,9 @@ footer{
     display: flex;
     gap: 180px;
     width: 100%;
-    margin: 0px 100px 0px 100px;
+}
+.footer__list{
+    padding: 0
 }
 .footer__list__item{
     font-family: Gogh, sans-serif;
@@ -36,11 +36,12 @@ footer{
     align-items: center;
     font-style: normal;
 }
+
 .footer__img{
-    margin-left: 1000px;
     padding: 5px;
     position: relative;
-    top: -60px;
+    top: -200px;
+    left: 300px
 }
 .footer__line{
     width: 100%;
@@ -51,9 +52,13 @@ footer{
 .footer__contacts{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .footer__contacts__list{
     display: flex;
     gap: 20px;
     margin-top: 60px;
+}
+.footer__container{
+    display: flex;
 }

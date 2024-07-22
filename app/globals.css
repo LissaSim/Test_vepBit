@@ -20,6 +20,19 @@ ul, li{
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Gogh';
+    src: url('../public/fonts/Gogh-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gogh Book';
+    src: url('../public/fonts/Gogh-Book.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 a{
     text-decoration: none;
