@@ -40,23 +40,32 @@ const Footer = () => {
                 </ul>
                 <ul className='footer__list'>
                     <li className="footer__list__item"><p>Contact</p></li>
-                    <li className="footer__list__item"><em><Image src={icon1} alt="Location"/>128 Orange Ave Daytona Beach, FL
+                    <li className="footer__list__item"><em><Image src={icon1} alt="Location"/>128 Orange Ave Daytona
+                        Beach, FL
                         32114</em></li>
                     <li className="footer__list__item"><em><Image src={icon2} alt="Number"/>888-SUDSYPRO</em></li>
-                    <li className="footer__list__item"><em><Image src={icon3} alt="Email"/>info@sudsyprowash.com</em></li>
+                    <li className="footer__list__item"><em><Image src={icon3} alt="Email"/>info@sudsyprowash.com</em>
+                    </li>
                 </ul>
             </div>
+            <div className="footer__line"></div>
             <div className="footer__contacts">
                 <Link href={"/"}><Image src={logo} alt=""/></Link>
-               <div className='footer__container'>
-                   <Image src={img} alt="Guarantee" className="footer__img"/>
-                   <ul className="footer__contacts__list">
-                       <li className="footer__contacts__list__item"><Link href={'/'}><Image src={facebook} alt="Facebook"/></Link></li>
-                       <li className="footer__contacts__list__item"><Link href={'/'}><Image src={instagram} alt="Instagram"/></Link></li>
-                       <li className="footer__contacts__list__item"><Link href={'/'}><Image src={twitter} alt="Twitter"/></Link></li>
-                       <li className="footer__contacts__list__item"><Link href={'/'}><Image src={youtube} alt="YouTube"/></Link></li>
-                   </ul>
-               </div>
+                <div className='footer__container'>
+                    <Image src={img} alt="Guarantee" className="footer__img"/>
+                    <ul className="footer__contacts__list">
+                        <li className="footer__contacts__list__item"><Link href={'/'}><Image src={facebook}
+                                                                                             alt="Facebook"/></Link>
+                        </li>
+                        <li className="footer__contacts__list__item"><Link href={'/'}><Image src={instagram}
+                                                                                             alt="Instagram"/></Link>
+                        </li>
+                        <li className="footer__contacts__list__item"><Link href={'/'}><Image src={twitter}
+                                                                                             alt="Twitter"/></Link></li>
+                        <li className="footer__contacts__list__item"><Link href={'/'}><Image src={youtube}
+                                                                                             alt="YouTube"/></Link></li>
+                    </ul>
+                </div>
             </div>
         </footer>
     )
